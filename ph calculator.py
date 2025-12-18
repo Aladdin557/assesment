@@ -9,18 +9,18 @@ def calculate_bmi(weight_kg, height_m):
     bmi_value = weight_kg / (math.pow(height_m, 2))
 
     if bmi_value < 18.5:
-        category = "Underweight"
+        category ="Underweight"
     elif 18.5 <= bmi_value < 25:
-        category = "Normal"
-    elif 25 <= bmi_value < 30:
-        category = "Overweight"
+        category ="Normal"
+    elif 25 <=bmi_value < 30:
+        category ="Overweight"
     else:
-        category = "Obesity"
+        category ="Obesity"
 
 
     return bmi_value, category
-weight = float(input("Enter your weight in kg: "))
-height = float(input("Enter your height in m: "))
+weight =float(input("Enter your weight in kg: "))
+height =float(input("Enter your height in m: "))
 
 bmi, status = calculate_bmi(weight, height)
 
